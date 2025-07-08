@@ -1,24 +1,12 @@
-import { StyleSheet, Text, View, Image } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      {/* Kotak data nama */}
-      <View style={styles.nameBox}>
-        <Text style={styles.nameText}>Abdullah Khaeruna Anwar</Text>
-        <Text style={styles.stambukText}>105841113822</Text>
-      </View>
-
-      {/* Lingkaran hijau */}
-      <View style={styles.circle} />
-
-      {/* Persegi panjang berisi gambar */}
+      {/* Persegi panjang berisi nama saja */}
       <View style={styles.rectangle}>
-        <Image
-          source={{ uri: "https://via.placeholder.com/150" }}
-          style={styles.image}
-        />
+        <Text style={styles.nameText}>Abdullah Khaeruna Anwar</Text>
       </View>
 
       {/* Segitiga */}
@@ -41,39 +29,19 @@ const styles = StyleSheet.create({
     gap: 20,
     backgroundColor: "#f5f5f5",
   },
-  nameBox: {
-    backgroundColor: "black",
-    padding: 10,
-    borderRadius: 10,
-    alignItems: "center",
-  },
-  nameText: {
-    color: "red",
-    fontSize: 25,
-  },
-  stambukText: {
-    fontWeight: "bold",
-    color: "white",
-  },
-  circle: {
-    width: 50,
-    height: 50,
-    backgroundColor: "green",
-    borderRadius: 100,
-  },
   rectangle: {
-    width: 150,
+    width: 250,
     height: 100,
-    backgroundColor: "#ccc",
+    backgroundColor: "black",
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 10,
-    overflow: "hidden",
+    padding: 10,
   },
-  image: {
-    width: 150,
-    height: 100,
-    resizeMode: "cover",
+  nameText: {
+    color: "red",
+    fontSize: 22,
+    fontWeight: "bold",
   },
   triangle: {
     width: 0,
@@ -91,7 +59,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#6200ee",
     paddingHorizontal: 20,
     paddingVertical: 10,
-    borderRadius: 50,
+    borderRadius: 80,
   },
   pillText: {
     color: "white",
