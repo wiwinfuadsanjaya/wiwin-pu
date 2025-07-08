@@ -3,67 +3,68 @@ import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
-    <View style={styles.wrapper}>
-      {/* Kotak nama (persegi panjang) */}
-      <View style={styles.nameBox}>
-        <Text style={styles.name}>Afil Anugrah</Text>
+    <View style={styles.mainContainer}>
+      {/* Header berisi nama dalam kotak hitam */}
+      <View style={styles.headerBox}>
+        <Text style={styles.headerText}>Wiwin Fuad Sanjaya</Text>
       </View>
 
-      {/* Bentuk segitiga */}
-      <View style={styles.triangleShape} />
+      {/* Segitiga berwarna orange */}
+      <View style={styles.triangle} />
 
-      {/* Bentuk kapsul berisi stambuk dan ikon */}
-      <View style={styles.capsule}>
-        <Ionicons name="person" size={20} color="#fff" style={{ marginRight: 8 }} />
-        <Text style={styles.idText}>105841113522</Text>
+      {/* Kapsul berisi stambuk dan ikon */}
+      <View style={styles.stambukContainer}>
+        <Ionicons name="person" size={19} color="#ffffff" style={{ marginRight: 6 }} />
+        <Text style={styles.stambukText}>105841114222</Text>
       </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  wrapper: {
+  mainContainer: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    gap: 25,
-    backgroundColor: "#eaeaea", // ubah warna latar
+    backgroundColor: "#f2f2f2", // beda warna latar
+    paddingVertical: 20,
   },
-  nameBox: {
-    width: 260,
-    height: 95,
-    backgroundColor: "#000",
+  headerBox: {
+    width: 255,
+    height: 90,
+    backgroundColor: "#111",
     justifyContent: "center",
     alignItems: "center",
-    borderRadius: 12,
-    padding: 12,
+    borderRadius: 14,
+    marginBottom: 25, // ganti dari gap
   },
-  name: {
-    color: "#ff4444", // ganti warna merah agar sedikit berbeda
-    fontSize: 23,
-    fontWeight: "600",
+  headerText: {
+    color: "#ff3333", // beda warna merah
+    fontSize: 22,
+    fontWeight: "700", // sedikit lebih tebal
   },
-  triangleShape: {
+  triangle: {
     width: 0,
     height: 0,
-    borderLeftWidth: 28,
-    borderRightWidth: 28,
-    borderBottomWidth: 55,
+    borderLeftWidth: 26,
+    borderRightWidth: 26,
+    borderBottomWidth: 50,
     borderLeftColor: "transparent",
     borderRightColor: "transparent",
-    borderBottomColor: "#ffa500",
+    borderBottomColor: "orange",
+    marginBottom: 25,
   },
-  capsule: {
+  stambukContainer: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#5c00cc",
-    paddingHorizontal: 24,
-    paddingVertical: 12,
-    borderRadius: 60,
+    backgroundColor: "#4a00c2", // ubah warna ungu
+    paddingHorizontal: 22,
+    paddingVertical: 10,
+    borderRadius: 100,
   },
-  idText: {
-    color: "white",
-    fontSize: 15,
-    fontWeight: "600",
+  stambukText: {
+    color: "#fff",
+    fontSize: 14.5,
+    fontWeight: "bold",
   },
 });
