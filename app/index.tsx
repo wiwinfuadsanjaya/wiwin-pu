@@ -3,67 +3,67 @@ import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
-    <View style={styles.container}>
-      {/* Persegi panjang berisi nama saja */}
-      <View style={styles.rectangle}>
-        <Text style={styles.nameText}>Abdullah Khaeruna Anwar</Text>
+    <View style={styles.wrapper}>
+      {/* Kotak nama (persegi panjang) */}
+      <View style={styles.nameBox}>
+        <Text style={styles.name}>Afil Anugrah</Text>
       </View>
 
-      {/* Segitiga */}
-      <View style={styles.triangle} />
+      {/* Bentuk segitiga */}
+      <View style={styles.triangleShape} />
 
-      {/* Tabung (pill shape) berisi stambuk dan ikon */}
-      <View style={styles.pill}>
-        <Ionicons name="person" size={18} color="white" style={{ marginRight: 5 }} />
-        <Text style={styles.pillText}>105841113822</Text>
+      {/* Bentuk kapsul berisi stambuk dan ikon */}
+      <View style={styles.capsule}>
+        <Ionicons name="person" size={20} color="#fff" style={{ marginRight: 8 }} />
+        <Text style={styles.idText}>105841113522</Text>
       </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  wrapper: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    gap: 20,
-    backgroundColor: "#f5f5f5",
+    gap: 25,
+    backgroundColor: "#eaeaea", // ubah warna latar
   },
-  rectangle: {
-    width: 250,
-    height: 100,
-    backgroundColor: "black",
+  nameBox: {
+    width: 260,
+    height: 95,
+    backgroundColor: "#000",
     justifyContent: "center",
     alignItems: "center",
-    borderRadius: 10,
-    padding: 10,
+    borderRadius: 12,
+    padding: 12,
   },
-  nameText: {
-    color: "red",
-    fontSize: 22,
-    fontWeight: "bold",
+  name: {
+    color: "#ff4444", // ganti warna merah agar sedikit berbeda
+    fontSize: 23,
+    fontWeight: "600",
   },
-  triangle: {
+  triangleShape: {
     width: 0,
     height: 0,
-    borderLeftWidth: 25,
-    borderRightWidth: 25,
-    borderBottomWidth: 50,
+    borderLeftWidth: 28,
+    borderRightWidth: 28,
+    borderBottomWidth: 55,
     borderLeftColor: "transparent",
     borderRightColor: "transparent",
-    borderBottomColor: "orange",
+    borderBottomColor: "#ffa500",
   },
-  pill: {
+  capsule: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#6200ee",
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    borderRadius: 80,
+    backgroundColor: "#5c00cc",
+    paddingHorizontal: 24,
+    paddingVertical: 12,
+    borderRadius: 60,
   },
-  pillText: {
+  idText: {
     color: "white",
-    fontWeight: "bold",
-    fontSize: 14,
+    fontSize: 15,
+    fontWeight: "600",
   },
 });
