@@ -6,6 +6,12 @@
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "expowiwind",
+    "name": "expo-Abdullah-D",
+    "slug": "expo-Abdullah-D",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "expoabdullahd",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
