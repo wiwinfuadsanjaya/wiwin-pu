@@ -18,7 +18,8 @@ export default function FontScreen() {
     { nama: 'alwi', stambuk: '105841114226' },
   ];
 
-  // Daftar font yang diimpor
+  // Daftar font yang diimpor (harus sama persis dengan app/_layout.tsx)
+  // 5 font statis dan 5 font variable
   const staticFonts = [
     'Poppins-Black',
     'Poppins-Bold',
