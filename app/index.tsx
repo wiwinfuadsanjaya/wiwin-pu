@@ -23,7 +23,7 @@ export default function FontScreen() {
   const staticFonts = [
     'Poppins-Black',
     'Poppins-Bold',
-    'Poppins-ExtraBold',
+    'Poppins-ExtraBoldItalic',
     'Poppins-ExtraLight',
     'SpaceMono-Regular',
   ];
